@@ -1,0 +1,30 @@
+Veja abaixo o título de cada uma das especificações:
+
+A aplicação deve carregar os pratos do restaurante com as seguintes informações:imagem, nome, categoria, descrição e preço (Figura 12);
+Os dados da aplicação devem ser estáticos e armazenados localmente (Figura 13);
+A aplicação deve ser iniciada mostrando os pratos da categoria "entrada" (Figura 14);
+A aplicação deve permitir ao usuário filtrar os pratos através dos botões de categoria (Figura 15);
+Sempre que um botão for clicado ele deve "acender", ou seja, ele deve mudar de cor como indicação de que foi clicado pelo usuário (Figura 16);
+A aplicação deve permitir ao usuário realizar buscas ao digitar apenas o nome ou a descrição de um prato desejado (Figuras 17 e 18);
+A busca deve ser parcial e ocorrer a partir do 3° caractere digitado, por exemplo: buscar por "Sal" deve retornar resultados que contenham a palavra "salada" ou "salmão" no nome ou descrição (Figura 19 a 21);
+Ao apagar totalmente o texto digitado no campo de busca, a lista de pratos exibida na tela não precisa ser atualizada. Isso acontecerá apenas se o usuário clicar em alguma categoria ou se realizar uma nova busca (Figura 22);
+O projeto deve utilizar as Fontes especificadas (Figuras 23 a 25);
+O projeto deve utilizar a Paleta de cores especificada;
+O projeto deve utilizar as imagens fornecidas (Figura 26);
+O projeto deve seguir o layout conforme especificado;
+O projeto deve ser adaptar a telas menores conforme especificado (Figuras 27 e 28).
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+
+font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+
+No desenvolvimento do projeto será utilizado a seguinte paleta de coresna página do cardápio do restaurante:
+
+#daa520
+#fff
+#f3f3f3
+#000000
+#fff
