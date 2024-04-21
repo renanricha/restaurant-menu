@@ -1,4 +1,4 @@
-import espaguete from "../assets/img/espaguete.jpg";
+import espaguete from '/assets/img/espaguete.jpg';
 import lasanha from "../assets/img/lasanha.jpg";
 import ravioli from "../assets/img/ravioli.jpg";
 import capeletti from "../assets/img/capeletti.jpg";
