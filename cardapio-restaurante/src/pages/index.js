@@ -1,4 +1,6 @@
-import Head from "next/head";
+import Head from "next/head"
+import espaguete from '../../public/assets/img/espaguete.jpg'
+import Image from "next/image"
 import "../styles/Home.module.css"
 import {retornarProdutos} from "../service"
 
@@ -13,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <p>retornarProdutos()</p>
+        <Image src={espaguete} />
       </div>
     </>
   );
