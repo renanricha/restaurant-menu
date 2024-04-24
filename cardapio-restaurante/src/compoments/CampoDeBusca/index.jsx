@@ -4,7 +4,7 @@ export const CampoBusca = () => {
         <input
           type="text"
           onChange={(event) => handleBuscar(event.target.value)}
-          placeholder="Pesquise um produto"
+          placeholder="Pesquise aqui um dos pratos do nosso cardápio"
         />
       </>
     );

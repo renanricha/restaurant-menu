@@ -15,7 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="banner">
-        <h1>Banner aqui</h1>
+        <h1>RESTAURANT</h1>
+        <p>De pratos clássicos a criações surpreendentes, nosso cardápio é um requinte de sabores refinados</p>
       </div>
       <Categorias />
       <CampoBusca />
