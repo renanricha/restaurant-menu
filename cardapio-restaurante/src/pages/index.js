@@ -1,9 +1,10 @@
 import Head from "next/head"
 import "../styles/Home.module.css"
-import ListaProdutos from "../service"
+import listaProdutos from "../service"
 
 
 export default function Home() {
+  listaProdutos()
   return (
     <>
       <Head>
@@ -12,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ListaProdutos />
+      
     </>
   );
 }
