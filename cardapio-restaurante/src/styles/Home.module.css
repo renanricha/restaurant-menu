@@ -19,6 +19,7 @@
 
 .bannerCont {
     width: 50%;
+    height: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -31,8 +32,10 @@
   }
 
 .bannerCont p {
-    letter-spacing: 5px;
-    font-size: 46px;
-    color: #8f6a24;
-    font-family: 'Apple Chancery', cursive;
-  }
+    text-align: center;
+    font-size: 36px;
+    color: #d5a521;
+    font-family: 'Dancing Script', cursive;
+    width: 600px;
+    line-height: 40px;
+}
