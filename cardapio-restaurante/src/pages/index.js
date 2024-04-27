@@ -1,8 +1,9 @@
 import Head from "next/head"
 import styles from "../styles/Home.module.css"
-import {Categorias} from "../compoments/Categorias"
-import {CampoBusca} from "../compoments/CampoDeBusca"
+import Categorias from "../compoments/Categorias"
+import CampoBusca from "../compoments/CampoDeBusca"
 import CardProduto from "../compoments/Cards"
+
 
 export default function Home() {
 
@@ -23,9 +24,11 @@ export default function Home() {
           <p>De pratos clássicos a criações surpreendentes, nosso cardápio é um requinte de sabores refinados</p>
         </div> 
       </div>
-      <Categorias />
-      <CampoBusca />
-      <h1>Cardápio</h1>
+      <div className={styles.filtros}>
+        <Categorias />
+        <CampoBusca />
+        <h1>Cardápio</h1>
+      </div>
       <CardProduto />
     </>
   );

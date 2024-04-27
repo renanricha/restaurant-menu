@@ -1,4 +1,4 @@
-export const CampoBusca = () => {
+const CampoBusca = () => {
     return (
       <>
         <input
@@ -9,3 +9,5 @@ export const CampoBusca = () => {
       </>
     );
   }
+
+  export default CampoBusca

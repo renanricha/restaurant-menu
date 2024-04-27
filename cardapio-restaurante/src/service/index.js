@@ -1,4 +1,4 @@
-import {produtos} from "../data/data-produtos.js"
+import produtos from "../data/data-produtos.js"
 import estilos from "../styles/Home.module.css"
 import CardProduto from "../compoments/Cards/index.jsx"
 
