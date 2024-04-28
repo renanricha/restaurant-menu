@@ -1,11 +1,15 @@
 import Head from "next/head"
 import styles from "../styles/Home.module.css"
+import { useState } from "react"
+import {filtrarProdutos, produtosEntradas } from "../service"
 import Categorias from "../compoments/Categorias"
 import CampoBusca from "../compoments/CampoDeBusca"
-import CardProduto from "../compoments/Cards"
+import CardsProdutos from "../compoments/Cards"
 
 
 export default function Home() {
+  const [dadosFiltrados, setDadosFiltrados] = useState(produtosEntradas)
+
 
   return (
     <>
@@ -28,8 +32,14 @@ export default function Home() {
         <Categorias />
         <CampoBusca />
         <h1>Cardápio</h1>
+        <p>{dadosFiltrados}</p>
       </div>
-      <CardProduto />
+      <div>
+        {produtosEntradas.map((produto) => (
+          <CardsProdutos key={produto.id} produto={produto} />
+        ))
+        }
+      </div>
     </>
   );
 }

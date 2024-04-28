@@ -1,10 +1,19 @@
-import React from "react";
+import Image from "next/image";
 
-const CardProduto = (name, ) => {
+const CardProduto = (produto) => {
     return (
         <div>
-            <h3>Cards</h3>
-            {/* Aqui você pode adicionar mais informações sobre o produto */}
+            <figure>
+                <Image src={produto.imagem} alt={produto.nome} />
+            </figure>
+            <div>
+                <div>
+                    <h3>{produto.nome}</h3>
+                    <small>{produto.categoria}</small>
+                    <p>{produto.descricao}</p>
+                </div>
+                <span>{new Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}.format(produto.preco))}</span>
+            </div>
         </div>
     );
 };
