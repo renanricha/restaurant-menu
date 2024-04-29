@@ -1,7 +1,7 @@
 import Head from "next/head"
 import styles from "../styles/Home.module.css"
 import { useState } from "react"
-import {filtrarProdutos, produtosEntradas } from "../service"
+import {produtosEntradas} from "../service"
 import Categorias from "../compoments/Categorias"
 import CampoBusca from "../compoments/CampoDeBusca"
 import CardsProdutos from "../compoments/Cards"
@@ -36,7 +36,13 @@ export default function Home() {
       </div>
       <div>
         {produtosEntradas.map((produto) => (
-          <CardsProdutos key={produto.id} produto={produto} />
+          <CardsProdutos key={produto.id}
+          id={produto.id}
+          nome={produto.nome}
+          categoria={produto.categoria}
+          preco={produto.preco}
+          descricao={produto.descricao}
+          imagem={produto.imagem} />
         ))
         }
       </div>

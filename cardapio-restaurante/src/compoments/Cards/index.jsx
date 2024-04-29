@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-const CardProduto = (produto) => {
+const CardProduto = (id, nome, categoria, preco, descricao, imagem) => {
     return (
         <div>
             <figure>
-                <Image src={produto.imagem} alt={produto.nome} />
+                <Image src={imagem} alt={nome} />
             </figure>
             <div>
                 <div>
-                    <h3>{produto.nome}</h3>
-                    <small>{produto.categoria}</small>
-                    <p>{produto.descricao}</p>
+                    <h3>{nome}</h3>
+                    <small>{categoria}</small>
+                    <p>{descricao}</p>
                 </div>
-                <span>{new Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}.format(produto.preco))}</span>
+                <span>{new Intl.NumberFormat('pt-br', {style: 'currency', currency: 'BRL'}.format(preco))}</span>
             </div>
         </div>
     );
