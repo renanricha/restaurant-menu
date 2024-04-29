@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const CardProduto = (id, nome, categoria, preco, descricao, imagem) => {
+const CardProduto = ({id, nome, categoria, preco, descricao, imagem}) => {
     return (
         <div>
             <figure>
