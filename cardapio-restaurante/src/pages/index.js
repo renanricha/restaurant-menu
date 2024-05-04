@@ -4,7 +4,7 @@ import { useState } from "react"
 import {produtosEntradas} from "../service"
 import Categorias from "../compoments/Categorias"
 import CampoBusca from "../compoments/CampoDeBusca"
-import CardsProdutos from "../compoments/Cards"
+import CardProduto from "../compoments/Cards"
 
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
       </div>
       <div>
         {produtosEntradas.map((produto) => (
-          <CardsProdutos key={produto.id}
+          <CardProduto key={produto.id}
           id={produto.id}
           nome={produto.nome}
           categoria={produto.categoria}
