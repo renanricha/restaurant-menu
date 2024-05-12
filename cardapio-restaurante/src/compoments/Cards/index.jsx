@@ -1,13 +1,14 @@
-import Image from "next/image";
+import Image from "next/image"
+import styles from "./Cards.module.css"
 
 const CardProduto = ({id, nome, categoria, preco, descricao, imagem}) => {
     return (
-        <div>
+        <div className={styles.container}>
             <figure>
                 <Image src={imagem} alt={nome} />
             </figure>
             <div>
-                <div>
+                <div className={styles.container_informacoes}>
                     <h3>{nome}</h3>
                     <small>{categoria}</small>
                     <p>{descricao}</p>

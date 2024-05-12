@@ -1,9 +1,27 @@
 .categorias {
+  width: 100%;
+  max-width: 1024px;
     margin: 10px auto;
+}
+
+.categorias div h2{
+  margin-bottom: 20px;
+}
+
+.container_botoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .icone {
     width: 20px;
     height: auto;
     margin-right: 5px;
+  }
+
+  .acenderBtn {
+    background-color: goldenrod;
   }
