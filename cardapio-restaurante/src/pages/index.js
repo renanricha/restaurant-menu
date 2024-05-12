@@ -32,10 +32,9 @@ export default function Home() {
         <Categorias />
         <CampoBusca />
         <h1>Cardápio</h1>
-        <p>{dadosFiltrados}</p>
       </div>
       <div>
-        {produtosEntradas.map((produto) => (
+        {dadosFiltrados.map((produto) => (
           <CardProduto key={produto.id}
           id={produto.id}
           nome={produto.nome}
